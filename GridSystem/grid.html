@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+		.orange {
+			background: orange;
+			border: 1px dashed red;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 12-unit grid system, must use container, each row divided into 12-units, 4 sizes: xs,sm,md,lg -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 pink">
+				<div class="row">
+					<div>
+						<div class="col-lg-6 orange">1st half</div>
+						<div class="col-lg-6 orange">2nd half</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3  col-sm-6 pink">COL</div>
+			<div class="col-md-3  col-sm-6 pink">COL</div>
+			<div class="col-md-3  col-sm-6 pink">
+				<div class="row">
+					<div>
+						<div class="col-lg-3 orange"></div>
+						<div class="col-lg-3 orange"></div>
+						<div class="col-lg-3 orange"></div>
+						<div class="col-lg-3 orange"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 pink">COL LG 4</div>
+			<div class="col-lg-4 pink">COL LG 4</div>
+			<div class="col-lg-4 pink">COL LG 4</div>
+		</div>
+	</div>
+
+</body>
+</html>
